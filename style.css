@@ -1,0 +1,239 @@
+/* style navbar with logo in the left and menu list on the right */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #f5f5ff;
+  color: black;
+}
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3535a6;
+  padding: 10px 20px;
+  position: sticky;
+}
+
+#logo img {
+  width: 100px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.menubar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+li {
+  display: inline;
+  margin: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #777;
+  margin: 10px 0;
+}
+
+#home {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #d2e0fb;
+}
+
+.title p {
+  max-width: 1000px;
+  min-width: 200px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin: auto;
+}
+
+h1 {
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+#home h3 {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+#home p {
+  margin-top: 0;
+  padding-bottom: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+#pokemon-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#my-pokemon h1 {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 40px;
+}
+#my-pokemon h3 {
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+}
+.pokemon-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+.pokemon-image {
+  width: 400px;
+  height: 300px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  padding: 3rem;
+  margin-top: 2rem;
+}
+
+.pokemon-image img {
+  width: 100%;
+  height: 100%;
+}
+
+#badge {
+  text-align: center;
+  background-color: #d2e0fb;
+  font-weight: bold;
+}
+
+#badge h1 {
+  padding-top: 2rem;
+  font-size: 40px;
+}
+
+#badge p {
+  padding-top: 2rem;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+#badge ul {
+  margin-bottom: 0;
+}
+
+#video {
+  text-align: center;
+}
+
+#video iframe {
+  width: 100%;
+  height: 50rem;
+}
+
+#join-us h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+#join-us form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.gender {
+  display: flex;
+  justify-content: flex-start;
+}
+
+fieldset {
+  width: 30%;
+  margin: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 95%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+}
+
+.gender label {
+  font-weight: lighter;
+  margin: 8px;
+}
+label {
+  display: block;
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+.upload-file p {
+  padding: 5px;
+  margin: 0;
+  font-style: italic;
+}
+
+.example-upload {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.example-upload p {
+  padding-bottom: 5px;
+  font-weight: bold;
+  padding-left: 60px;
+}
+
+.example-upload img {
+  width: 200px;
+  height: 400px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 100px;
+  text-align: center;
+  color: #fff;
+  background-color: #333;
+}
+
+footer p {
+  padding: 30px;
+}

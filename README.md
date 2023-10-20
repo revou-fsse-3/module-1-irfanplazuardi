@@ -1,6 +1,10 @@
+# Deployed Website Netlify
+
+[irfan-revou-pokemon.netlify.app](irfan-revou-pokemon.netlify.app)
+
 # Irfan Prima Lazuardi
 
-![profile](image/9676-min-fotor-2023091385350-transformed.png)
+![profile](asset/9676-min-fotor-2023091385350-transformed.png)
 
 ## About Me
 
