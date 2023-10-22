@@ -175,6 +175,14 @@ h1 {
   padding: 1rem;
 }
 
+legend {
+  font-size: 1rem;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: #032138;
+}
+
 .gender {
   display: flex;
   justify-content: flex-start;
@@ -183,6 +191,7 @@ h1 {
 fieldset {
   width: 30%;
   margin: 5px;
+  background-color: #d2e0fb;
 }
 
 input[type="text"],
@@ -209,7 +218,6 @@ label {
   padding: 5px;
   margin: 0;
   font-style: italic;
-  font-weight: 100;
 }
 
 .example-upload {
