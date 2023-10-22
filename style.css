@@ -1,10 +1,13 @@
-/* style navbar with logo in the left and menu list on the right */
+/* body */
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
   background-color: #f5f5ff;
   color: black;
+  font-family: "Poppins", sans-serif;
+  /* body */
+
+  /* navbar */
 }
 #navbar {
   display: flex;
@@ -37,6 +40,7 @@ li {
 a {
   text-decoration: none;
   color: #fff;
+  font-weight: 800;
 }
 
 a:hover {
@@ -48,14 +52,15 @@ hr {
   border-top: 1px solid #777;
   margin: 10px 0;
 }
+/* navbar */
 
+/* home */
 #home {
   text-align: center;
   margin-bottom: 20px;
   font-size: 20px;
   font-weight: bold;
   color: black;
-  font-family: Arial, Helvetica, sans-serif;
   background-color: #d2e0fb;
 }
 
@@ -63,7 +68,7 @@ hr {
   max-width: 1000px;
   min-width: 200px;
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-weight: 100;
   margin: auto;
 }
 
@@ -80,9 +85,11 @@ h1 {
 #home p {
   margin-top: 0;
   padding-bottom: 2rem;
-  font-family: "Poppins", sans-serif;
+  font-weight: 100;
 }
+/* home */
 
+/* my pokemon */
 #pokemon-list {
   display: flex;
   flex-wrap: wrap;
@@ -97,8 +104,7 @@ h1 {
 }
 #my-pokemon h3 {
   font-size: 30px;
-  font-family: "Roboto", sans-serif;
-  font-weight: bolder;
+  font-weight: ExtraBold 800;
 }
 .pokemon-card {
   display: flex;
@@ -120,11 +126,13 @@ h1 {
   width: 100%;
   height: 100%;
 }
+/* my pokemon */
 
+/* badge */
 #badge {
   text-align: center;
   background-color: #d2e0fb;
-  font-weight: bold;
+  font-weight: 800;
 }
 
 #badge h1 {
@@ -135,13 +143,14 @@ h1 {
 #badge p {
   padding-top: 2rem;
   font-size: 20px;
-  font-family: "Roboto", sans-serif;
 }
 
 #badge ul {
   margin-bottom: 0;
 }
+/* badge */
 
+/* video */
 #video {
   text-align: center;
 }
@@ -150,7 +159,9 @@ h1 {
   width: 100%;
   height: 50rem;
 }
+/* video */
 
+/* join us */
 #join-us h1 {
   text-align: center;
   font-size: 40px;
@@ -198,6 +209,7 @@ label {
   padding: 5px;
   margin: 0;
   font-style: italic;
+  font-weight: 100;
 }
 
 .example-upload {
@@ -208,7 +220,7 @@ label {
 
 .example-upload p {
   padding-bottom: 5px;
-  font-weight: bold;
+  font-weight: 800;
   padding-left: 60px;
 }
 
@@ -226,7 +238,9 @@ button[type="submit"] {
   color: #fff;
   font-weight: bold;
 }
+/* join us */
 
+/* footer */
 footer {
   margin-top: 100px;
   text-align: center;
@@ -237,3 +251,4 @@ footer {
 footer p {
   padding: 30px;
 }
+/* footer */
