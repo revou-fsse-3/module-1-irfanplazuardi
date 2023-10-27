@@ -25,3 +25,49 @@ uploadFile.addEventListener("change", function () {
     this.value = "";
   }
 });
+
+//scroll change color transition
+window.addEventListener("scroll", function () {
+  const navbar = document.getElementById("navbar");
+  if (window.scrollY > 0) {
+    navbar.style.backgroundColor = "rgba(53, 53, 166, 0.8)";
+  } else {
+    navbar.style.backgroundColor = "#3535a6";
+  }
+});
+
+// Add padding to the h1 element when a link in the navbar is clicked
+document.querySelectorAll("#navbar a").forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    var targetId = this.getAttribute("href").substring(1); // Get the target element's ID
+    var targetElement = document.getElementById(targetId);
+    var navbarHeight = document.getElementById("navbar").offsetHeight;
+
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop - navbarHeight,
+        behavior: "smooth",
+      });
+
+      var h1Element = document.querySelector("h1");
+      h1Element.style.paddingTop = "1rem";
+    }
+  });
+});
+
+//Hamburger button
+const hamburger = document.querySelector(".hamburger");
+const menubar = document.querySelector(".menubar");
+
+hamburger.addEventListener("click", function () {
+  hamburger.classList.toggle("active");
+  menubar.classList.toggle("active");
+});
+
+document.querySelectorAll(".menulink").forEach((link) => {
+  link.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    menubar.classList.remove("active");
+  });
+});

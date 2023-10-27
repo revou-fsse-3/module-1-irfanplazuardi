@@ -1,14 +1,18 @@
-/* body */
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+/* body */
+body {
   background-color: #f5f5ff;
   color: black;
   font-family: "Poppins", sans-serif;
-  /* body */
-
-  /* navbar */
 }
+/* body */
+
+/* navbar */
 #navbar {
   display: flex;
   justify-content: space-between;
@@ -16,6 +20,8 @@ body {
   background-color: #3535a6;
   padding: 10px 20px;
   position: sticky;
+  top: 0;
+  transition: background-color 0.5s ease;
 }
 
 #logo img {
@@ -37,21 +43,35 @@ li {
   margin: 0 10px;
 }
 
-a {
+.menulink {
   text-decoration: none;
   color: #fff;
   font-weight: 800;
+  transition: 0.3s ease-out;
 }
 
-a:hover {
-  text-decoration: underline;
+.menulink:hover {
+  text-decoration: underline #f5f5ff;
+  text-decoration-skip: spaces;
+  text-underline-offset: 7px;
+  color: #ce2b1e;
 }
 
-hr {
-  border: 0;
-  border-top: 1px solid #777;
-  margin: 10px 0;
+.hamburger {
+  display: none;
+  cursor: pointer;
 }
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: #fff;
+}
+
 /* navbar */
 
 /* home */
@@ -113,8 +133,8 @@ h1 {
   margin-top: 2rem;
 }
 .pokemon-image {
-  width: 400px;
-  height: 300px;
+  width: 29rem;
+  height: 27rem;
   margin: 10px;
   padding: 10px;
   text-align: center;
@@ -158,6 +178,7 @@ h1 {
 #video iframe {
   width: 100%;
   height: 50rem;
+  margin: auto;
 }
 /* video */
 
@@ -189,16 +210,18 @@ legend {
 }
 
 fieldset {
-  width: 30%;
+  width: 40rem;
   margin: 5px;
   background-color: #d2e0fb;
+  padding: 0.625rem;
+  border-radius: 10px;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 textarea {
-  width: 95%;
+  width: 40rem;
   padding: 0.5rem;
   margin: 0.5rem 0;
   border: 1px solid #ccc;
@@ -233,8 +256,8 @@ label {
 }
 
 .example-upload img {
-  width: 200px;
-  height: 400px;
+  width: 12.5rem;
+  height: 25rem;
 }
 
 button[type="submit"] {
@@ -245,6 +268,7 @@ button[type="submit"] {
   background-color: #333;
   color: #fff;
   font-weight: bold;
+  border-radius: 10px;
 }
 /* join us */
 
@@ -260,3 +284,82 @@ footer p {
   padding: 30px;
 }
 /* footer */
+
+@media screen and (max-width: 1000px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .menubar {
+    position: fixed;
+    right: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgba(53, 53, 166);
+    width: 100%;
+    text-align: center;
+    transition: right 0.3s;
+    padding: 2rem 0;
+    gap: 1rem;
+  }
+  .menuitem {
+    margin: 16px 0;
+  }
+
+  .menubar.active {
+    right: 0;
+  }
+
+  fieldset {
+    width: 20rem;
+  }
+  .example-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #video iframe {
+    width: 50rem;
+    height: 40rem;
+    margin: auto;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 30rem;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 20rem;
+  }
+
+  #video iframe {
+    width: 25rem;
+    height: 20rem;
+    margin: auto;
+  }
+}

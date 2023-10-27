@@ -15,12 +15,27 @@
     <nav id="navbar">
       <div id="logo"><img src="asset/logo.png" alt="logo" /></div>
       <ul class="menubar">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#my-pokemon">Pokemon</a></li>
-        <li><a href="#badge">Badge</a></li>
-        <li><a href="#video">Video</a></li>
-        <li><a href="#join-us">Join Us</a></li>
+        <li class="menuitem">
+          <a href="#home" class="menulink">Home</a>
+        </li>
+        <li class="menuitem">
+          <a href="#my-pokemon" class="menulink">Pokemon</a>
+        </li>
+        <li class="menuitem">
+          <a href="#badge" class="menulink">Badge</a>
+        </li>
+        <li class="menuitem">
+          <a href="#video" class="menulink">Video</a>
+        </li>
+        <li class="menuitem">
+          <a href="#join-us" class="menulink">Join Us</a>
+        </li>
       </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </nav>
 
     <header id="home">
@@ -96,8 +111,6 @@
 
       <section id="video">
         <iframe
-          width="560"
-          height="315"
           src="https://www.youtube.com/embed/5vyV74tkdEs?si=EdvFlJNn0ZNwPW2B"
           title="YouTube video player"
           frameborder="0"
@@ -109,7 +122,7 @@
       <section id="join-us">
         <h1>Join Our Party</h1>
         <form>
-          <fieldset>
+          <fieldset class="formfield">
             <legend>Tell Me About You</legend>
             <div>
               <label for="name">Name:</label>
@@ -134,7 +147,7 @@
             </div>
           </fieldset>
 
-          <fieldset>
+          <fieldset class="formfield">
             <legend>Additional Information</legend>
             <div>
               <label for="region">Select your pokemon region:</label>
