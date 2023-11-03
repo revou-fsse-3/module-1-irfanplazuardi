@@ -4,7 +4,7 @@
 
 # Irfan Prima Lazuardi
 
-![profile](asset/9676-min-fotor-2023091385350-transformed.png)
+![profile](asset/image/9676-min-fotor-2023091385350-transformed.png)
 
 ## About Me
 

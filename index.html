@@ -5,15 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>pokemon</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="asset/icon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,800;1,600&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="asset/image/icon.png" />
   </head>
 
   <body>
     <nav id="navbar">
-      <div id="logo"><img src="asset/logo.png" alt="logo" /></div>
+      <div id="logo"><img src="asset/image/logo.png" alt="logo" /></div>
       <ul class="menubar">
         <li class="menuitem">
           <a href="#home" class="menulink">Home</a>
@@ -29,6 +26,15 @@
         </li>
         <li class="menuitem">
           <a href="#join-us" class="menulink">Join Us</a>
+        </li>
+        <li>
+          <div class="mode-toggle">
+            <label class="toogle">
+              <input type="checkbox" id="mode-toggle" />
+              <span class="slider"></span>
+            </label>
+            <p class="mode-label">&#128262;</p>
+          </div>
         </li>
       </ul>
       <div class="hamburger">
@@ -50,6 +56,35 @@
         <h3>Pokemon</h3>
         <p>Gotta catch'em all</p>
       </div>
+
+      <section id="event">
+        <div class="slideshow-container">
+          <div class="myslides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="asset/image/slide1.png" alt="Asia Championship Series" />
+          </div>
+          <div class="myslides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="asset/image/slide2.png" alt="My Favorite Award" />
+          </div>
+          <div class="myslides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="asset/image/slide3.jpg" alt="Pokemon Card Collection" />
+          </div>
+          <div class="myslides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="asset/image/slide4.jpg" alt="Asia Campaign Event" />
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="dot-container">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+      </section>
     </header>
 
     <main>
@@ -57,27 +92,27 @@
         <h1>Pokemon Line Up</h1>
         <ul id="pokemon-list">
           <li class="pokemon-card">
-            <img class="pokemon-image" src="asset/pikachu.png" alt="pikachu" />
+            <img class="pokemon-image" src="asset/image/pikachu.png" alt="pikachu" />
             <h3>Pikachu</h3>
           </li>
           <li class="pokemon-card">
-            <img class="pokemon-image" src="asset/charizard.png" alt="charizard" />
+            <img class="pokemon-image" src="asset/image/charizard.png" alt="charizard" />
             <h3>Charizard</h3>
           </li>
           <li class="pokemon-card">
-            <img class="pokemon-image" src="asset/greninja.png" alt="greninja" />
+            <img class="pokemon-image" src="asset/image/greninja.png" alt="greninja" />
             <h3>Greninja</h3>
           </li>
           <li class="pokemon-card">
-            <img class="pokemon-image" src="asset/gengar.png" alt="gengar" />
+            <img class="pokemon-image" src="asset/image/gengar.png" alt="gengar" />
             <h3>Gengar</h3>
           </li>
           <li class="pokemon-card">
-            <img class="pokemon-image" src="asset/incineroar.png" alt="incineroar" />
+            <img class="pokemon-image" src="asset/image/incineroar.png" alt="incineroar" />
             <h3>Incineroar</h3>
           </li>
           <li class="pokemon-card">
-            <img class="pokemon-image" src="asset/lugia.png" alt="lugia" />
+            <img class="pokemon-image" src="asset/image/lugia.png" alt="lugia" />
             <h3>Lugia</h3>
           </li>
         </ul>
@@ -85,28 +120,38 @@
 
       <section id="badge">
         <h1>Gym Badges</h1>
-        <ul>
-          <li>
-            <img src="asset/Heat_Badge.png" alt="heat-bage" />
-            <p>Heat Badge</p>
-          </li>
-          <li>
-            <img src="asset/Feather_Badge.png" alt="feather-badge" />
-            <p>Feather Badge</p>
-          </li>
-          <li>
-            <img src="asset/Stone_Badge.png" alt="stone-badge" />
-            <p>Stone Badge</p>
-          </li>
-          <li>
-            <img src="asset/Dynamo_Badge.png" alt="dynamo-badge" />
-            <p>Dynamo Badge</p>
-          </li>
-          <li>
-            <img src="asset/Mind_Badge.png" alt="mind-badge" />
-            <p>Mind Badge</p>
-          </li>
-        </ul>
+        <div class="grid-container1">
+          <div class="trainer">
+            <picture>
+              <source media="(max-width:800px)" srcset="asset/image/trainer-min.png" />
+              <img src="asset/image/trainer.png" alt="trainer" style="width: auto" />
+            </picture>
+          </div>
+          <div class="badge-grid">
+            <ul class="badge-list">
+              <li class="badge-item">
+                <img src="asset/image/Heat_Badge.png" alt="heat-bage" />
+                <p>Heat Badge</p>
+              </li>
+              <li class="badge-item">
+                <img src="asset/image/Feather_Badge.png" alt="feather-badge" />
+                <p>Feather Badge</p>
+              </li>
+              <li class="badge-item">
+                <img src="asset/image/Stone_Badge.png" alt="stone-badge" />
+                <p>Stone Badge</p>
+              </li>
+              <li class="badge-item">
+                <img src="asset/image/Dynamo_Badge.png" alt="dynamo-badge" />
+                <p>Dynamo Badge</p>
+              </li>
+              <li class="badge-item">
+                <img src="asset/image/Mind_Badge.png" alt="mind-badge" />
+                <p>Mind Badge</p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <section id="video">
@@ -126,7 +171,7 @@
             <legend>Tell Me About You</legend>
             <div>
               <label for="name">Name:</label>
-              <input type="text" id="name" required />
+              <input type="text" id="name" autofocus required />
             </div>
             <div>
               <label for="email">Email:</label>
@@ -168,6 +213,26 @@
               <textarea name="message" id="message" cols="30" rows="10"></textarea>
             </div>
             <div>
+              <label for="date">When would you be available to join our party</label>
+              <input type="date" id="date" required />
+            </div>
+            <div>
+              <label for="level">Select your trainer level</label>
+              <div class="range-level">
+                <input type="range" min="1" max="50" value="1" id="level" />
+                <span>Level 1</span>
+              </div>
+              <div class="range-level">
+                <ul class="level-list">
+                  <li>level 1-10: Beginner</li>
+                  <li>level 11-20: Intermediate</li>
+                  <li>level 21-30: Advanced</li>
+                  <li>level 31-40: Expert</li>
+                  <li>level 41-50: Master</li>
+                </ul>
+              </div>
+            </div>
+            <div>
               <div class="upload-file">
                 <label for="upload-pokedex">Upload your pokedex and pokemon lineup:</label>
                 <input type="file" id="upload-pokedex" name="uploadPokedex[]" multiple accept="image/png, image/jpeg" required />
@@ -176,11 +241,11 @@
               <div class="example-upload">
                 <div>
                   <p>Pokedex</p>
-                  <img src="asset/pokedex.png" alt="pokedex" />
+                  <img src="asset/image/pokedex.png" alt="pokedex" />
                 </div>
                 <div>
                   <p>My Pokemon</p>
-                  <img src="asset/pokemonScreenshot.png" alt="pokemonScreenshot" />
+                  <img src="asset/image/pokemonScreenshot.png" alt="pokemonScreenshot" />
                 </div>
               </div>
             </div>
