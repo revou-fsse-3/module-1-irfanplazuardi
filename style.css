@@ -651,6 +651,12 @@ footer p {
     align-items: center;
     justify-content: center;
   }
+
+  .level-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
 
 @media screen and (max-width: 800px) {

@@ -1,6 +1,6 @@
 # Deployed Website Netlify
 
-[pokemon](https://pokemon-irfan-revou.netlify.app/)
+[pokemon](https://irfan-revou-pokemon.netlify.app/)
 
 # Irfan Prima Lazuardi
 
